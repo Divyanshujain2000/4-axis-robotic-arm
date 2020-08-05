@@ -75,7 +75,7 @@ while (again==1):
     
     time.sleep(2)  #    wait so that angle data starts to receive 
     again=0
-    while (ser.available()==0  and again==0):
+    while (ser.available()==1  and again==0):
         ang1=ser.read()
         ang2=ser.read()
         ang3=ser.read()
